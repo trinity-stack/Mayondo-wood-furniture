@@ -12,16 +12,14 @@ Mayondo Wood & Furniture is a premium furniture brand focused on crafting high-q
 
 ## Technologies Used
 
-HTML5 & CSS3 — for structure and styling.
-JavaScript (ES6) — for form validation, localStorage handling, and interactivity.
-PHP — for backend logic, sessions, and database communication.
-MySQL — for storing user information.
+HTML5 & CSS — for structure and styling.
+JavaScript — for form validation, localStorage handling, and interactivity.
 
 ## How to Use
 
 Users can register via register.html.
 Registered users login through login.html.
-User data is stored in localStorage (for GitHub Pages version) 
+User data is stored in localStorage
 
 ## Authors
 #Trinity Tendo — Project Developer and Designer
