@@ -1,0 +1,205 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #00d4ff, #0077ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .user-info a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar .user-info a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+thead {
+  background: linear-gradient(90deg, #00d4ff, #0077ff);
+}
+
+thead th {
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 8px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+tbody tr:hover {
+  background: rgba(0, 212, 255, 0.1);
+}
+
+/* Table actions */
+.action-btn {
+  padding: 4px 8px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: green;
+}
+
+.edit-btn:hover {
+  background: #00ff00;
+  color: #000;
+}
+
+.delete-btn {
+  background: red;
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+  color: #000;
+}
+
+/* Search form */
+.search-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  margin-right: 5px;
+}
+
+.search-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #00d4ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-form button:hover {
+  background: #0077ff;
+}
+
+/* Export CSV */
+.export-btn {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 8px 15px;
+  background: #00d4ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.export-btn:hover {
+  background: #0077ff;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 6px 12px;
+  margin: 0 3px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(0, 212, 255, 0.4);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.pagination a.active {
+  background: #00d4ff;
+}
+
+.pagination a:hover {
+  background: #0077ff;
+}
+
+/* Responsive table for mobile */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
+  tbody td {
+    padding: 10px;
+    text-align: right;
+    position: relative;
+  }
+  tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 50%;
+    font-weight: bold;
+    text-align: left;
+    color: #00d4ff;
+  }
+}

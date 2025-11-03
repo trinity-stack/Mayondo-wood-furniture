@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Mayondo Furniture</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <img src="images/pexels-jonathanborba-9976126.jpg" alt="Logo" class="rotating-logo" />
+      <h1>Login to Mayondo</h1>
+
+      <form id="loginForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="username" placeholder="Username" required />
+          <span class="error-msg" id="error_username"></span>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" required />
+          <span class="error-msg" id="error_password"></span>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+        <a href="register.html" class="btn">Register</a>
+      </form>
+    </div>
+
+    <form>
+      <a href="index.html" class="btn">Home 😊</a>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

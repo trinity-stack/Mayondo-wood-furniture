@@ -1,0 +1,86 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('images/pexels-dada-_design-240566386-12281853.jpg') no-repeat center center/cover;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Dark overlay for text contrast */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 700px;
+  padding: 30px;
+  animation: fadeIn 2s ease-in;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff3c00;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Rotating circular logo */
+.rotating-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #f3bef8;
+  margin-bottom: 20px;
+  animation: spin 10s linear infinite;
+  box-shadow: 0 0 25px #604366;
+}
+
+/* Button styling */
+.btn {
+  text-decoration: none;
+  background: linear-gradient(90deg, #353331, #ff9100);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 174, 0, 0.6);
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #ff0062, #493f43);
+  box-shadow: 0 0 25px rgba(239, 123, 243, 0.8);
+}
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

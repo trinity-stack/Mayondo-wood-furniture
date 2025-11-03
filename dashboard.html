@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Mayondo Furniture</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">MA Platform</div>
+    <div class="user-info">
+      Welcome, <span id="loggedUser"></span> |
+      <a href="#" id="logoutBtn" class="btn">Logout</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>All Registered Users</h1>
+
+    <div class="search-form">
+      <input type="text" id="search" placeholder="Search username/email" />
+      <button id="searchBtn">Search</button>
+      <button id="exportBtn" class="export-btn">Export CSV</button>
+    </div>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Contact</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="pagination" id="pagination"></div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

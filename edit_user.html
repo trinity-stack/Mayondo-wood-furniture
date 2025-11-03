@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit User | MA Platform</title>
+  <link rel="stylesheet" href="edit_user.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Edit User</h1>
+
+    <div id="error" class="error-msg" style="display:none;"></div>
+
+    <form id="editForm">
+      <div class="form-group">
+        <input type="text" id="first_name" placeholder="First Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="last_name" placeholder="Last Name" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="contact" placeholder="Contact" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="New Password (leave blank to keep current)">
+      </div>
+
+      <button type="submit">Update User</button>
+    </form>
+
+    <a href="dashboard.html" class="btn" style="display:block; text-align:center; margin-top:15px;">Back to Dashboard</a>
+  </div>
+
+  <script src="edit_user.js"></script>
+</body>
+</html>
