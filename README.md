@@ -9,7 +9,6 @@ Mayondo Wood & Furniture is a premium furniture brand focused on crafting high-q
  Dashboard Management — view, edit, and delete users (or later, furniture products).
  Session Management — login/logout with secure sessions.
  Edit User Profiles — admins can update user information.
- Export Data — download user data as CSV (currently via dashboard).
 
 ## Technologies Used
 
